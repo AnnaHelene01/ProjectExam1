@@ -1,0 +1,102 @@
+/* Meny > */
+header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    height: 70px;
+    background: black;
+    width: 100%;
+}
+
+nav {
+    margin-left: 25px;
+    display: none;
+    position: fixed;
+    top: 90px;
+    background: black;
+    z-index: 1000;
+    right: 8px;
+}
+
+nav a {
+    padding: 20px;
+}
+
+/* Fjerne underline på alle linker*/
+a {
+    text-decoration: none;
+}
+
+/* Hamburger meny for mobil versjon*/
+.fa-bars {
+    color: white;
+    font-size: 30px;
+}
+
+#hamburger-menu {
+    display: none;
+    margin: 10px;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav li {
+    display: block;
+    padding: 20px 30px;
+}
+
+.logo {
+    width: 200px;
+}
+
+/* Sette underline på aktiv side*/
+.action {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 20px;
+}
+
+header a {
+    color: white;
+}
+
+header a:hover {
+    color:black;
+    padding: 20px;
+    background-color: white;
+}
+
+/*DESKTOP VERSION*/
+@media (min-width: 1041px) {
+    /*Gjøre meny desktop vennlig (fjerne hamburger) */
+    header {
+        justify-content: start;
+    }
+ 
+    nav {
+        display: block;
+        position: static;
+        width: 100%;
+    }
+ 
+    nav li {
+        display: inline-block;
+        padding: 0px;
+    }
+ 
+    header label {
+        display: none;
+    }
+
+ }
+ 
