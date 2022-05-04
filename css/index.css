@@ -19,6 +19,8 @@ nav {
     background: black;
     z-index: 1000;
     right: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 nav a {
@@ -75,6 +77,30 @@ header a:hover {
     padding: 20px;
     background-color: white;
 }
+
+
+/*FOOTER -> */
+.footer-links , .footer-icons {
+    display: flex;
+}
+
+.footer-links > p {
+    width: 200px;
+}
+
+.footer-icons {
+    text-align: center;
+}
+
+.footer-circle {
+    background-color: #bbb;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
 
 /*DESKTOP VERSION*/
 @media (min-width: 1041px) {
