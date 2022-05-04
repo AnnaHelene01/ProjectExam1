@@ -1,6 +1,5 @@
 const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts";
-//const url = "https://www.geek.no/wp-json/wp/v2/posts";
-//const url = "https://www.geek.no/wp-json/wp/v2/pages";
+
 fetch(url)
 .then(response => response.json())
 .then(data => {

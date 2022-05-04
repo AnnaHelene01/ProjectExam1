@@ -3,8 +3,7 @@ const id = new URLSearchParams(queryString).get('id');
 if (!id) { window.location = "posts.html"; }
 
 const url = `https://www.annahelene.no/exam1/wp-json/wp/v2/posts/${id}`;
-//const url = `https://www.geek.no/wp-json/wp/v2/posts/${id}`;
-//const url = `https://www.geek.no/wp-json/wp/v2/pages/${id}`;
+
 fetch(url)
 .then(response => response.json())
 .then(data => {
@@ -34,6 +33,8 @@ function displayPost (data) {
   document.title = title;
 }
 
+
+/*
 function getImageURL(id) {
   fetch(`https://www.geek.no/wp-json/wp/v2/media/${id}`)
   .then(response => response.json())
@@ -56,3 +57,5 @@ function addImage(src) {
     output.prepend(img);
   }
 }
+
+*/

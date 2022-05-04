@@ -1,10 +1,19 @@
+/*Sette fontfamilie til nettsiden! */
+header, h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /* Meny > */
 header {
     display: flex;
     position: relative;
     align-items: center;
     justify-content: space-evenly;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     height: 70px;
     background: black;
@@ -79,17 +88,40 @@ header a:hover {
 }
 
 
+/*BILDE PÅ FORSIDEN -> */
+.front-image {
+    background-image: url('/images/homepage.webp');
+    background-size: cover;
+    filter: brightness(100%);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    min-height: 30vh;
+}
+
+.front-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.frontpage-img {
+    width: 60%;
+}
+
+
 /*FOOTER -> */
 .footer-links , .footer-icons {
     display: flex;
 }
 
 .footer-links > p {
+    font-weight: bolder;
     width: 200px;
-}
-
-.footer-icons {
-    text-align: center;
 }
 
 .footer-circle {
@@ -124,5 +156,19 @@ header a:hover {
         display: none;
     }
 
+
+    .front-image {
+        background-image: url('/semesterimages/bakgrunntest.jpg');
+        background-size: cover;
+        filter: brightness(50%);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+        min-height: 50vh;
+    }
+    
+    .front-text {
+        top: 38%;
+    }
  }
  
