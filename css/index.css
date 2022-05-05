@@ -27,7 +27,6 @@ nav {
     top: 90px;
     background: black;
     z-index: 1000;
-    right: 8px;
     width: 100%;
     text-align: center;
 }
@@ -92,7 +91,7 @@ header a:hover {
 .front-image {
     background-image: url('/images/homepage.webp');
     background-size: cover;
-    filter: brightness(100%);
+    filter: brightness(50%);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom;
@@ -101,7 +100,7 @@ header a:hover {
 
 .front-text {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 15px;
@@ -113,8 +112,18 @@ header a:hover {
     width: 60%;
 }
 
+.front-header {
+    font-size: 1em;
+}
+
 
 /*FOOTER -> */
+footer {
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .footer-links , .footer-icons {
     display: flex;
 }
@@ -122,6 +131,23 @@ header a:hover {
 .footer-links > p {
     font-weight: bolder;
     width: 200px;
+}
+
+.footer-links {
+    display: flex;
+}
+
+/* .footer-links {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    margin: 40px;
+} */
+
+.footer-link {
+    margin: 60px;
+    text-align: center;
 }
 
 .footer-circle {
@@ -151,24 +177,32 @@ header a:hover {
         display: inline-block;
         padding: 0px;
     }
+
+    nav ul {
+        float: right;
+    }
  
     header label {
         display: none;
     }
 
-
+/*Gjøre bildet med tekst responsivt: */
     .front-image {
-        background-image: url('/semesterimages/bakgrunntest.jpg');
+        background-image: url('/images/homepage.webp');
         background-size: cover;
         filter: brightness(50%);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: bottom;
-        min-height: 50vh;
+        min-height: 70vh;
     }
     
     .front-text {
         top: 38%;
+    }
+
+    .front-header {
+        font-size: 1.5em;
     }
  }
  
