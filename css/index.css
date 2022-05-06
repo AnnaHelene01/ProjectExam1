@@ -137,6 +137,10 @@ footer {
     display: flex;
 }
 
+.footer-txt {
+    font-weight: bolder;
+}
+
 /* .footer-links {
     position: absolute;
     left: 50%;

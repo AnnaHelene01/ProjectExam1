@@ -33,13 +33,11 @@ function displayPost (data) {
   document.title = title;
 }
 
-
-/*
+//Hente ut bildene fra postene: 
 function getImageURL(id) {
-  fetch(`https://www.geek.no/wp-json/wp/v2/media/${id}`)
+  fetch(`https://www.annahelene.no/exam1/wp-json/wp/v2/media/${id}`)
   .then(response => response.json())
   .then(data => {
-    //console.log('Success (getImageURL):', data);
     addImage (data.source_url);
   })
   .catch((error) => {
@@ -53,9 +51,8 @@ function addImage(src) {
     let img = document.createElement("img");
     img.src = src;
     img.alt = "";
-    img.width = 640;
+    img.maxwidth = 50;
     output.prepend(img);
   }
 }
 
-*/
