@@ -25,8 +25,9 @@ function displayPost (data) {
 
   let content = `
   <h1>${title}</h1>
+  <div class="post-cont">
   ${excerpt}
-  <p>&gt; <a href="${link}" target="_blank">Read more @ geek.no</a></p>
+  </div>
   `;
 
   output.innerHTML = content;

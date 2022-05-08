@@ -1,0 +1,64 @@
+/*CONTACT PAGE */
+h1 {
+    text-align: center;
+}
+
+form > div { 
+    margin: 20px 0; 
+}
+
+/*Gjør span rød for mer brukervennlighet og da det tyder på at noe er feil */
+span {
+    color: red;
+}
+
+label { 
+    display: inline-block; 
+    align-content: center; 
+    text-align: right; 
+    font-size: 18px;
+}
+
+input {
+    height: 30px;
+}
+
+input[type=submit] { 
+    margin-left: 0px; 
+    font-size: 18px;
+}
+
+
+/* Gjøre knappen go back mer synlig*/
+button {
+    border: 2px solid black;
+    font-size: 18px;
+    background-color: lightgray;
+    color: white;
+}
+
+/* Hvit på hover for mer brukervennlighet*/
+button:hover {
+    background-color:white;
+}
+
+/* ORDNE BANNER NÅR SKJEMA ER SUBMITTED*/
+.message {
+    border: 1px solid blue;
+    color: blue; 
+    background-color: rgba(0, 0, 255, 0.1);
+    padding: 10px; 
+    margin: 0 0 10px 0;
+  }
+
+.error {
+    border: 1px solid darkred;
+    color: darkred; 
+    background-color: rgba(255, 0, 0, 0.1);            
+  }
+  
+  .ok {
+    border: 1px solid darkgreen;
+    color: darkgreen; 
+    background-color: rgba(0, 255, 0, 0.1);            
+  }

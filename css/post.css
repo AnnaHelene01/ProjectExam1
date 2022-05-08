@@ -1,0 +1,18 @@
+.post-cont {
+    min-width: 600px;
+}
+
+.post-cont > p {
+    max-width: 300px;
+}
+
+img {
+    
+    height: auto;
+}
+
+@media (min-width: 1041px) {
+    .post-cont {
+        display: flex;
+    }
+}
