@@ -1,13 +1,40 @@
+/*STILE POSTS SIDEN */
+h1 {
+    text-align: center;
+}
+
+#posts {
+/*    justify-items: center; */
+    padding: 30px;
+    margin: 0px;
+    list-style-type: none; /*Fjerne dotten fra linkene */
+    text-decoration: none;
+}
+
+/*Legge til underline når man hovrer for mer brukervennlighet */
+#posts :hover{
+    text-decoration: underline;
+}
+
+#posts > div {
+    padding: 20px;
+    margin: 10px;
+}
+
+
 #posts > div > li {
     font-size: 1.5em;
 }
 
 /* Lage et grid-system */
-
+#posts {
+    display: grid;
+    grid-template-columns: auto;
+}
 
 
 /*Responsivt */
-@media (min-width: 865px) {
+@media (min-width: 950px) {
     #posts {
         display: grid;
         grid-template-columns: auto auto auto;
