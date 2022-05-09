@@ -32,6 +32,7 @@ button {
     font-weight: bold;
     margin-left: 5px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 /*Seksjon med bilde / tekst */
