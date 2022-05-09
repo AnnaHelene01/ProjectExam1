@@ -5,5 +5,5 @@
 /* Lage et flex-system */
 #posts {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
 }
