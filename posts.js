@@ -16,11 +16,13 @@ function listPosts (posts) {
     for (let post of posts) {
         console.log(post);
         myList += `
+        <div>
         <li>
             <a href="post.html?id=${post.id}">
                 ${post.title.rendered}
             </a>
-        </li>`;
+        </li>
+        </div>`;
     }
     output.innerHTML = myList;
 }
