@@ -1,13 +1,11 @@
-.post-cont {
-    min-width: 600px;
+.post-cont > p{
+    min-width: 300px;
+    flex: 1;
 }
 
-.post-cont > p {
-    max-width: 300px;
-}
 
 img {
-    
+    max-width: 600px;
     height: auto;
 }
 

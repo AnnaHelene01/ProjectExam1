@@ -1,5 +1,5 @@
-// Tester om jeg kan sette inn dato
-var months = [ //create the months
+// Sette inn dato som endrer seg aktivt!
+var months = [ //sette inn månedene
     'January',
     'February',
     'March',
@@ -12,13 +12,13 @@ var months = [ //create the months
     'October',
     'November',
     'December'
-], d, m, y, now, out_string; //vars to hold date, month, year, date object and output string
+], d, m, y, now, out_string; //vars til å holde dato, måned, år, dato object og output string
 now = new Date(); //new date object
 d = now.getDate(); //current date
 m = now.getMonth(); // current month
 y = now.getFullYear(); //current year
 
 
-out_string = months[m] + ' ' + d + ' , ' + y; //concat date parts into output string 
+out_string = months[m] + ' ' + d + ' , ' + y; //concat dato parts til output string 
 
-document.getElementById('date').innerHTML = out_string; //set the html of the hmtl element to the output string
+document.getElementById('date').innerHTML = out_string; //sette html of the hmtl element to the output string

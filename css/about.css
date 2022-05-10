@@ -1,6 +1,10 @@
 /* STILE ABOUT / OM MEG - SIDEN*/
+main {
+    margin: 40px;
+}
+
 h1 {
-    text-align: center;
+    font-size: 2em;
 }
 
 h2 {
@@ -38,7 +42,7 @@ button {
 /*Seksjon med bilde / tekst */
 /*P-teksten > */
 .intro-txt {
-    max-width: 700px;
+    max-width: 500px;
 }
 
 .smaller-section {
@@ -85,4 +89,9 @@ button {
     button { 
         margin-left: 250px;
     }
+
+    .more-txt {
+        margin-top: 40px;
+    }
+
 }
