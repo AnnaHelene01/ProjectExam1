@@ -122,6 +122,15 @@ header a:hover {
     font-size: 1em;
 }
 
+/*Seksjon med dato og linje under */
+.line {
+    background-color: rgb(240, 240, 234);
+    border: none;
+    height: 1px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
 
 /*FOOTER -> */
 footer {
