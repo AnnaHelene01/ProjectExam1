@@ -31,3 +31,7 @@ function listPosts (posts) {
 } 
 
 // <img src="${post._embedded['wp:featuredmedia'][0].source_url}">
+
+//FÅ INN DATO
+const date = new Date();
+date.setHours(0, 0, 0, 0)
