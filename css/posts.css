@@ -44,12 +44,12 @@ a {
 /* Lage et grid-system */
 .list {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto auto;
     justify-content: center;
 }
 
 
-img {
+.img-posts-size {
     width: 300px;
     height: 200px;
     object-fit: cover;
@@ -73,7 +73,7 @@ button {
 
 /*Responsivt */
 @media (min-width: 555px) {
-    img {
+    .img-posts-size {
         width: 400px;
         height: 300px;
         object-fit: cover;
@@ -81,7 +81,7 @@ button {
 }
 
 @media (min-width: 750px) {
-    img {
+    .img-posts-size {
         width: 500px;
         height: 400px;
         object-fit: cover;
@@ -95,7 +95,7 @@ button {
         grid-template-columns: auto auto auto;
     }
 
-    img {
+    .img-posts-size {
         width: 300px;
         height: 200px;
         object-fit: cover;

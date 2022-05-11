@@ -19,7 +19,7 @@ function listPosts (posts) {
         <div>
            <div class="posts-img"> 
               <a href="post.html?id=${post.id}"> 
-              <img src="${post._embedded['wp:featuredmedia'][0].source_url}">
+              <img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="img-posts-size">
               </a>
            </div>
            <a href="post.html?id=${post.id}">
@@ -34,4 +34,5 @@ function listPosts (posts) {
 
 //FÅ INN DATO
 const date = new Date();
-date.setHours(0, 0, 0, 0)
+date.setHours(0, 0, 0, 0);
+

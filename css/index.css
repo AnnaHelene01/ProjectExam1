@@ -97,10 +97,8 @@ header a:hover {
 }
 
 /*Loading ikon: */
-#loading-icon {
-    position: relative;
-    top: 50%;
-    left: 50%;
+.slider{
+    text-align: center;
 }
 
 /*BILDE PÅ FORSIDEN -> */
@@ -193,7 +191,8 @@ footer {
 }
 
 .footer-links {
-    justify-content: center;
+    justify-content: space-evenly;
+    padding-right: 60px;
 }
 
 .footer-txt {
@@ -201,10 +200,6 @@ footer {
     font-size: 1.3em;
 }
 
-.footer-link {
-    margin: 60px;
-    text-align: center;
-}
 
 .footer-circle {
     border: 2px solid black;
