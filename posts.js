@@ -10,19 +10,22 @@ fetch(url)
   console.error('Error:', error);
 });
 
-const output = document.querySelector("#posts");
+const output = document.querySelector(".list");
 function listPosts (posts) {
     let myList = "";
     for (let post of posts) {
         console.log(post);
         myList += `
         <div>
-        <li>
             <a href="post.html?id=${post.id}">
                 ${post.title.rendered}
             </a>
-        </li>
+           <a href="post.html?id=${post.id}"> 
+            
+           </a>
         </div>`;
     }
     output.innerHTML = myList;
-}
+} 
+
+// <img src="${post._embedded['wp:featuredmedia'][0].source_url}">

@@ -7,6 +7,11 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+.homepage-h1 { 
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
 
 /* Meny > */
 header {
@@ -123,6 +128,10 @@ header a:hover {
 }
 
 /*Seksjon med dato og linje under */
+#date {
+    margin-left: 20px;
+}
+
 .line {
     background-color: rgb(240, 240, 234);
     border: none;
@@ -132,7 +141,21 @@ header a:hover {
 }
 
 
+/*MAIN HOME PAGE */
+h2 { 
+    text-align: center;
+}
+
+
+
+
 /*FOOTER -> */
+/*Gjøre linkene svarte */
+footer > a:link    {color:#000;}  /* unvisited link  */
+footer > a:visited {color:#000;}  /* visited link    */
+footer > a:hover   {color:#000;}  /* mouse over link */
+footer > a:active  {color:#000;}  /* selected link   */ 
+
 footer {
     margin-top: 2em;
     margin-right: auto;

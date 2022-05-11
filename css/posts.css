@@ -3,6 +3,18 @@ h1 {
     text-align: center;
 }
 
+
+/*Gjøre linkene svarte 
+a:link    {color:#000;}   unvisited link  
+a:visited {color:#000;}   visited link    
+a:hover   {color:#000;} * mouse over link 
+a:active  {color:#000;}  /* selected link    
+*/
+
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
 #posts {
 /*    justify-items: center; */
     padding: 30px;
@@ -12,7 +24,7 @@ h1 {
 }
 
 /*Legge til underline når man hovrer for mer brukervennlighet */
-#posts :hover{
+.list :hover{
     text-decoration: underline;
 }
 
@@ -22,14 +34,17 @@ h1 {
 }
 
 
-#posts > div > li {
+.list > div {
     font-size: 1.5em;
+    margin: 50px;
+    padding: 20px;
 }
 
 /* Lage et grid-system */
-#posts {
+.list {
     display: grid;
     grid-template-columns: auto;
+    justify-content: center;
 }
 
 /*Designe buttons */
@@ -47,13 +62,10 @@ button {
     cursor: pointer;
 }
 
-button :hover {
-    background-color: gray;
-}
 
 /*Responsivt */
 @media (min-width: 950px) {
-    #posts {
+    .list {
         display: grid;
         grid-template-columns: auto auto auto;
     }

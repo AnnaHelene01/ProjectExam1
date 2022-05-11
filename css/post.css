@@ -1,16 +1,22 @@
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .post-cont > p{
     min-width: 300px;
     flex: 1;
 }
-
 
 img {
     max-width: 600px;
     height: auto;
 }
 
+
 @media (min-width: 1041px) {
     .post-cont {
         display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
     }
 }
