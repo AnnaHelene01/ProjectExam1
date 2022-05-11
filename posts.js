@@ -1,4 +1,5 @@
-const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed";
+const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed&per_page=9"; //henter ut spesifikt 9 poster etter eget valg
+//const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed&per_page=9&page=2";
 
 fetch(url)
 .then(response => response.json())
@@ -30,9 +31,8 @@ function listPosts (posts) {
     output.innerHTML = myList;
 } 
 
-// <img src="${post._embedded['wp:featuredmedia'][0].source_url}">
-
-//FÅ INN DATO
-const date = new Date();
-date.setHours(0, 0, 0, 0);
+// Lage en funksjon for å hente ut 9 neste poster (i mitt tilfelle er det 3 til)
+function getMore () {
+  
+}
 

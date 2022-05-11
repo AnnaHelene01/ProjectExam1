@@ -44,7 +44,7 @@ a {
 /* Lage et grid-system */
 .list {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     justify-content: center;
 }
 
