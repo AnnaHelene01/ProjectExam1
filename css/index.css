@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /*Sette fontfamilie til nettsiden! */
 header, h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
@@ -130,6 +135,7 @@ header a:hover {
 /*Seksjon med dato og linje under */
 #date {
     margin-left: 20px;
+    margin: 15px;
 }
 
 .line {
@@ -146,7 +152,22 @@ h2 {
     text-align: center;
 }
 
+.latest-header {
+    font-size: 2em;
+}
 
+.line-h2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.h2-line {
+    background-color: grey;
+    height: 2px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 
 /*FOOTER -> */

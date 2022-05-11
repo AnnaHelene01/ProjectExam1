@@ -1,4 +1,4 @@
-const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts";
+const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed";
 
 fetch(url)
 .then(response => response.json())
@@ -17,11 +17,13 @@ function listPosts (posts) {
         console.log(post);
         myList += `
         <div>
-            <a href="post.html?id=${post.id}">
-                ${post.title.rendered}
-            </a>
-           <a href="post.html?id=${post.id}"> 
-            
+           <div class="posts-img"> 
+              <a href="post.html?id=${post.id}"> 
+              <img src="${post._embedded['wp:featuredmedia'][0].source_url}">
+              </a>
+           </div>
+           <a href="post.html?id=${post.id}">
+           ${post.title.rendered}
            </a>
         </div>`;
     }
