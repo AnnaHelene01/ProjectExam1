@@ -146,11 +146,8 @@ header a:hover {
 
 
 /*MAIN HOME PAGE */
-h2 { 
-    text-align: center;
-}
-
 .latest-header {
+    text-align: center;
     font-size: 2em;
 }
 
@@ -200,6 +197,9 @@ footer {
     font-size: 1.3em;
 }
 
+.footer-link {
+    text-align: center;
+}
 
 .footer-circle {
     border: 2px solid black;

@@ -1,3 +1,20 @@
+// Kode til popup "ofte stilt spørsmål"
+var popup = document.getElementsByClassName("question");
+var i;
+
+for (i = 0; i < popup.length; i++) {
+  popup[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var oftenasked = this.nextElementSibling;
+    if (oftenasked.style.display === "block") {
+        oftenasked.style.display = "none";
+    } else {
+        oftenasked.style.display = "block";
+    }
+  });
+}
+
+
 //Hente ut html elementet og legge til addEventListener og en funksjon
 const form = document.querySelector ("form#signup");
 form.addEventListener("submit", validateForm);

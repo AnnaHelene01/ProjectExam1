@@ -1,3 +1,8 @@
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
 }
@@ -8,12 +13,18 @@ p {
 }
 
 img {
-    max-width: 600px;
+    max-width: 500px;
     height: auto;
+    margin: 30px;
 }
 
 
 @media (min-width: 1041px) {
+    img {
+        max-width: 700px;
+        height: auto;
+    }
+
     .post-cont {
         display: flex;
         flex-wrap: wrap;
