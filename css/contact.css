@@ -98,11 +98,15 @@ input[type=email] {
 input[type=submit] { 
     float: center; 
     font-size: 18px;
-    padding: 10px;
+    font-weight: 700;
+    width: 150px;
+    padding: 12px 0;
+    text-align: center;
     background-color: white;
     color: black;
     border: none;
     margin: 5px;
+    border-radius: 0.3rem;
     cursor: pointer;
 }
 
@@ -138,14 +142,17 @@ input[type=submit] {
   }
 
   .contact-box {
+      display: flex;
+      flex-direction: column;
       justify-content:center;
       margin: 50px;
+      align-items: center;
   }
 
   .contact-container-form, .contact-container-txt {
       max-width: 500px;
       margin: 0px;
-      padding: 60px;
+      padding: 10px;
   }
 
   form {
@@ -153,9 +160,10 @@ input[type=submit] {
   }
 
   .contact-container-txt {
-      display:inline-block;
-      position: relative;
-      margin: 0px 120px;
+      justify-content: center;
+      /* display:inline-block; */
+      /* position: relative;
+      margin: 0px 120px; */
   }
 
   .container-align-icons {
@@ -179,6 +187,7 @@ input[type=submit] {
       
     .contact-box {
         display: flex;
+        flex-direction: row;
     }
 
     .contact-container-txt {
