@@ -1,11 +1,17 @@
-h1 {
-    text-align: center;
-    margin: 50px;
+/*Sette fontfamilie til nettsiden! */
+header, h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
 }
+
+h1 {
+    text-align: center;
+    margin: 50px;
+}
+
 
 .post {
     display: flex;

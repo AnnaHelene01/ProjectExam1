@@ -49,7 +49,8 @@ fetch(url2)
 // Lage en funksjon for å hente ut 9 neste poster (i mitt tilfelle er det 3 til)
 const loadMore = document.getElementById("#button");
 function getMore () {
-  let myList = myList;
+  let myList = myList
+  ;
   for (let post of posts) {
       console.log(post);
       myList += `
