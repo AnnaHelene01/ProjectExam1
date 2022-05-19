@@ -24,8 +24,8 @@ function displayPost (data) {
   getImageURL(data.featured_media);  
 
   let content = `
-  <h1>${title}</h1>
   <div class="post-cont">
+  <h1>${title}</h1>
   ${excerpt}
   </div>
   `;
