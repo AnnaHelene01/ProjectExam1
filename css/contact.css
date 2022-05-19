@@ -18,6 +18,10 @@ h1 {
 }
 
 /* "poput" spørsmål button kode/design:*/
+.question-txt { /*Flytte til left så den ikke er sentrert pga design */
+    text-align: left;
+}
+
 .question-section {
   display: grid;
   grid-template-rows: auto;
@@ -149,8 +153,9 @@ input[type=submit] {
   }
 
   .contact-container-txt {
-      margin-top: 0px;
       display:inline-block;
+      position: relative;
+      margin: 0px 120px;
   }
 
   .container-align-icons {
@@ -168,7 +173,7 @@ input[type=submit] {
   }
 
   @media (min-width: 1041px) {
-      h2, p,  {
+      h2, p  {
           text-align: left;
       }
       
@@ -183,10 +188,10 @@ input[type=submit] {
     form {
         float: left;
     }
-        /*
+
+    /*
     .contact-first-section {
-        display: 
+        display: flex;
     }
    */
-    
   }

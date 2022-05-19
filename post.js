@@ -22,7 +22,7 @@ function displayPost (data) {
   const excerpt = data.content.rendered;
   const link = data.link;
   getImageURL(data.featured_media);  
-
+// Legge innholdet inn i HTML:
   let content = `
   <div class="post-cont">
   <h1>${title}</h1>
@@ -33,6 +33,9 @@ function displayPost (data) {
   output.innerHTML = content;
   document.title = title;
 }
+
+// Endre tittel til hver enkelt tema:
+document.title('${title}');
 
 //Hente ut bildene fra postene: 
 function getImageURL(id) {
