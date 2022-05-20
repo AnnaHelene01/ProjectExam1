@@ -110,6 +110,21 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/* Textarea: */
+input:focus,
+textarea:focus {
+    border: 2px solid #78CBFF;
+    outline: none;
+    background-color: #dfe1e4;
+}
+
+textarea {
+    resize: vertical;
+    padding: 10px;
+    min-height: 30px;
+    width: 185px;
+}
+
 
 /* ORDNE BANNER NÅR SKJEMA ER SUBMITTED*/
 .message {
@@ -145,7 +160,7 @@ input[type=submit] {
       display: flex;
       flex-direction: column;
       justify-content:center;
-      margin: 50px;
+      margin: 30px;
       align-items: center;
   }
 
@@ -161,9 +176,6 @@ input[type=submit] {
 
   .contact-container-txt {
       justify-content: center;
-      /* display:inline-block; */
-      /* position: relative;
-      margin: 0px 120px; */
   }
 
   .container-align-icons {

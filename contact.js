@@ -23,13 +23,13 @@ form.addEventListener("submit", validateForm);
 const fullName = document.querySelector ("input#name");
 const subject = document.querySelector ("input#subject");
 const email = document.querySelector ("input#email");
-const address = document.querySelector ("input#address");
+const message = document.querySelector ("input#message");
 
 //Hente ut alle span-ene fra html!
 const nameMsg = document.querySelector ("span#nameMsg");
 const subjectMsg = document.querySelector ("span#subjectMsg");
 const emailMsg = document.querySelector ("span#emailMsg");
-const addressMsg = document.querySelector ("span#addressMsg");
+const messageMsg = document.querySelector ("span#messageMsg");
 
 
 //Hvis alle felter er validert rett, kan formet bli submitted
@@ -46,23 +46,23 @@ function validateForm(e) {
   // Forhindre at skjema submitter før det er ferdig
   e.preventDefault();
 
-  // Validate Name,no digits and at least 2 charachters
+  // Validate Name,no digits and at least 5 charachters
   let submittedName = fullName.value.trim(); 
   console.log("Name: " + submittedName); 
   nameMsg.innerHTML = ""; // Clear earlier messages
-  if (submittedName.length < 2) { // Check if name is long enough
-    nameMsg.innerHTML += "The name must be at least 2 characters long! "; 
+  if (submittedName.length < 5) { // Check if name is long enough
+    nameMsg.innerHTML += "The name must be at least 5 characters long! "; 
   }  
   if (/\d/.test(submittedName)) { // And make sure it don't contain any digits
     nameMsg.innerHTML += "The name cannot contain any digits! ";
   }
 
-  //Validate subject (minimum lengde på 10)
+  //Validate subject (minimum lengde på 15)
   let submittedSubject = subject.value.trim();
   console.log("Subject: " + submittedSubject);
   subjectMsg.innerHTML = ""; //Clear earlier messages
-  if (submittedSubject.length < 10) {
-      subjectMsg.innerHTML += "The subject must be at least 10 charachters long!";
+  if (submittedSubject.length < 15) {
+      subjectMsg.innerHTML += "The subject must be at least 15 charachters long!";
   }
   if (/\d/.test(submittedSubject)) { //Make sure it dont contain any digits 
     subjectMsg.innerHTML += "The subject cannot contain any digits!";
@@ -77,15 +77,15 @@ function validateForm(e) {
     emailMsg.innerHTML += "Please enter a valid email";
   }
 
-  //Validate Address
-  let submittedAddress = address.value.trim();
-  console.log("Address: " + submittedAddress);
-  addressMsg.innerHTML = ""; // Clear earlier messages
-  if (submittedAddress.length < 25) {
-    addressMsg.innerHTML += "The address must be at least 25 characters!";
+  //Validate Message
+  let submittedMessage = message.value.trim();
+  console.log("Message: " + submittedMessage);
+  messageMsg.innerHTML = ""; // Clear earlier messages
+  if (submittedMessage.length < 25) {
+    messageMsg.innerHTML += "The address must be at least 25 characters!";
   } 
 
-if (nameMsg.innerHTML === "" && subjectMsg.innerHTML === "" && emailMsg.innerHTML === "" && addressMsg.innerHTML === "") {
+if (nameMsg.innerHTML === "" && subjectMsg.innerHTML === "" && emailMsg.innerHTML === "" && messageMsg.innerHTML === "") {
     console.log("Form is submitted!");
     displayBanner("Form is submitted!", "ok")
     //form.submit(); ///for å submitte skjema 
