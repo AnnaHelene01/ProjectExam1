@@ -125,44 +125,11 @@ textarea {
     width: 185px;
 }
 
-
-#nameError {
-    /*display: none;*/
-    text-align: center;
-    background-color: #a20009;
-    width: 189px;
-    height: 25px;
-    padding: 10px;
-    font-size: 16px;
-}
-
-/* ORDNE BANNER NÅR SKJEMA ER SUBMITTED*/
-.message {
-    border: 1px solid blue;
-    color: blue; 
-    background-color: rgba(0, 0, 255, 0.1);
-    padding: 10px; 
-    margin: 0 0 10px 0;
-  }
-
-.error {
-    border: 1px solid darkred;
-    color: darkred; 
-    background-color: rgba(255, 0, 0, 0.1);            
-  }
-  
-  .ok {
-    border: 1px solid darkgreen;
-    color: darkgreen; 
-    background-color: rgba(0, 255, 0, 0.1);            
-  }
-
-
   /*form design */
   .contact-form {
       width: 100%;
       min-height: 500px;
-      background-color: #303030;
+      background-color: #a9d6e5;
       color: white
   }
 
@@ -175,7 +142,7 @@ textarea {
   }
 
   .contact-container-form, .contact-container-txt {
-      max-width: 500px;
+      max-width: 240px;
       margin: 0px;
       padding: 10px;
   }
@@ -214,6 +181,7 @@ textarea {
 
     .contact-container-txt {
         margin-top: 75px;
+        margin-left: 100px;
     }
 
     form {

@@ -26,7 +26,7 @@ header {
     justify-content: space-evenly;
     font-size: 1rem;
     height: 70px;
-    background: black;
+    background: #2a6f97;
     width: 100%;
 }
 
@@ -35,7 +35,7 @@ nav {
     display: none;
     position: fixed;
     top: 90px;
-    background: black;
+    background: #2a6f97;
     z-index: 1000;
     width: 100%;
     text-align: center;
@@ -157,7 +157,7 @@ header a:hover {
 }
 
 .h2-line {
-    background-color: grey;
+    background-color: #a9d6e5;
     height: 2px;
     margin-top: 15px;
     margin-left: 20px;
@@ -183,6 +183,53 @@ header a:hover {
 .slider .slider-post.prev-item,
 .slider .slider-post.next-item {
     display: block;
+}
+
+/*EKSTRA INFO UNDER SLIDER */
+.extra-info {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.section-recommandations {
+   
+}
+
+/* Seksjon til venstre */
+.side-box {
+    width: 300px;
+    background-color: #a9d6e5;
+    height: 400px;
+}
+
+.side-first-section {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.side-img {
+    background-image: url('/images/annaportrett2.png');
+    background-size: cover;
+    min-width: 90px;
+    min-height: 90px;
+    margin-left: 30px;
+}
+
+.side-txt-lol {
+    max-width: 140px;
+    margin-left: 20px;
+}
+
+.side-header {
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-left: 30px;
+    margin-top: 25px;
+}
+
+.side-txt {
+    font-size: 1rem;
+    margin-left: 30px;
 }
 
 

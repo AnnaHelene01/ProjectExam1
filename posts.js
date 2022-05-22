@@ -38,7 +38,7 @@ const url2 = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed&per_pag
 fetch(url2)
 .then(response => response.json())
 .then(data => {
-  //console.log('Success:', data);
+  console.log('Success:', data);
   getMore(data);
 })
 .catch((error) => {
@@ -46,11 +46,10 @@ fetch(url2)
 });
 
 
-// Lage en funksjon for å hente ut 9 neste poster (i mitt tilfelle er det 3 til)
+//Lage en funksjon for å hente ut 9 neste poster (i mitt tilfelle er det 3 til)
 const loadMore = document.getElementById("#button");
 function getMore () {
-  let myList = myList
-  ;
+  let myList = "";
   for (let post of posts) {
       console.log(post);
       myList += `

@@ -51,10 +51,10 @@ function validateForm(e) {
   console.log("Name: " + submittedName); 
   nameMsg.innerHTML = ""; // Clear earlier messages
   if (submittedName.length < 5) { // Check if name is long enough
-    nameMsg.innerHTML += "The name must be at least 5 characters long! "; 
+    nameMsg.innerHTML += "Navnet må være minst 5 bokstaver langt! "; 
   }  
   if (/\d/.test(submittedName)) { // And make sure it don't contain any digits
-    nameMsg.innerHTML += "The name cannot contain any digits! ";
+    nameMsg.innerHTML += "Navnet kan ikke inneholde tegn! ";
   }
 
   //Validate subject (minimum lengde på 15)
@@ -62,10 +62,10 @@ function validateForm(e) {
   console.log("Subject: " + submittedSubject);
   subjectMsg.innerHTML = ""; //Clear earlier messages
   if (submittedSubject.length < 15) {
-      subjectMsg.innerHTML += "The subject must be at least 15 charachters long!";
+      subjectMsg.innerHTML += "Temaet må være minst 15 bokstaver langt!";
   }
   if (/\d/.test(submittedSubject)) { //Make sure it dont contain any digits 
-    subjectMsg.innerHTML += "The subject cannot contain any digits!";
+    subjectMsg.innerHTML += "Temaet kan ikke inneholde tegn!";
   }
 
   // Validate e-mail
@@ -74,7 +74,7 @@ function validateForm(e) {
   emailMsg.innerHTML = ""; // Clear earlier messages    
   let emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (!emailPattern.test(submittedEmail)) {
-    emailMsg.innerHTML += "Please enter a valid email";
+    emailMsg.innerHTML += "Vennligst fyll inn en gyldig epost!";
   }
 
   //Validate Message
@@ -82,18 +82,16 @@ function validateForm(e) {
   console.log("Message: " + submittedMessage);
   messageMsg.innerHTML = ""; // Clear earlier messages
   if (submittedMessage.length < 25) {
-    messageMsg.innerHTML += "The address must be at least 25 characters!";
+    messageMsg.innerHTML += "Beskjeden må være minst 25 bokstaver!";
   } 
 
 if (nameMsg.innerHTML === "" && subjectMsg.innerHTML === "" && emailMsg.innerHTML === "" && messageMsg.innerHTML === "") {
     console.log("Form is submitted!");
-    displayBanner("Form is submitted!", "ok")
-    //form.submit(); ///for å submitte skjema 
+    form.submit(); ///for å submitte skjema 
 }
  else {
     console.log("You still have validation errors");
-    displayBanner("You still have validation errors", "error");
 }
-}//Bannerne fjernes med en gang du refresher siden.
+}
 
 
