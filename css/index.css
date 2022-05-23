@@ -131,6 +131,7 @@ header a:hover {
     width: 90px;
     border: 2px solid black;
     background-color: #a9d6e5;
+    font-weight: bold;
     margin-right: 10px;
     font-size: 1.2rem;
 }
@@ -140,6 +141,7 @@ header a:hover {
     width: 90px;
     border: 2px solid black;
     background-color: #a9d6e5;
+    font-weight: bold;
     margin-left: 10px;
     font-size: 1.2rem;
 }
@@ -195,7 +197,7 @@ header a:hover {
 }
 
 img {
-    max-width: 380px;
+    max-width: 300px;
 }
 
 .reco-header {
@@ -209,7 +211,7 @@ img {
 }
 
 .reco-div {
-    max-width: 380px;
+    max-width: 300px;
 }
 
 .reco-h2 {
@@ -334,7 +336,7 @@ footer {
 
 /*Recommandation section grid responsive: */
 /*Change size on img and txt */
-@media (min-width: 620px) {
+@media (min-width: 460px) {
     img , .reco-div {
         max-width: 450px;
     }
