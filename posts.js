@@ -47,9 +47,9 @@ fetch(url2)
 
 
 //Lage en funksjon for å hente ut 9 neste poster (i mitt tilfelle er det 3 til)
-const loadMore = document.getElementById("#button");
+const loadMore = document.getElementById("#loadMore");
+
 function getMore () {
-  let myList = "";
   for (let post of posts) {
       console.log(post);
       myList += `
@@ -67,3 +67,60 @@ function getMore () {
   loadMore.innerHTML = myList;
 } 
 
+
+
+//FORSØK IGJEN
+
+// const loadMore = document.querySelector("loadMore");
+
+// function loadFunction(list) {
+//   fetch("https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed&per_page=9&page=2", {
+//     "method": "GET"
+//   })
+
+
+// .then(response => response.json())
+// .then(data => {
+//   console.log('Success:', data);
+//   newListData(data);
+// })
+// .catch((error) => {
+//   console.error('Error:', error);
+// });
+
+// console.log("Hentet nye poster");
+
+// function newListData {
+//     for (let item of list) {
+//       console.log(item);
+//       output.innerHTML += `
+//       <div>
+//          <div class="posts-img"> 
+//             <a href="post.html?id=${item.id}"> 
+//             <img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="img-posts-size">
+//             </a>
+//          </div>
+//          <a href="post.html?id=${item.id}">
+//          ${item.title.rendered}
+//          </a>
+//       </div>`;
+//   }
+//   loadMore.innerHTML = output;
+// } 
+
+
+
+
+
+ //FORSØK
+//function newListData(list) {
+//  for (let item og list) {
+// console.log(item);
+// allPosts.innerHTML += '
+// <div>
+//     <a href="post.html?id=${item.id}">
+//        <img id="${item.id}" src="$item._embed"
+//}
+//}
+
+// loadMore.addEventListener("click", loadFunction)

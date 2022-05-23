@@ -13,13 +13,8 @@ h1 {
 }
 
 
-.post {
-    display: flex;
-}
-
-.post-cont > p{
+.post-cont > p {
     min-width: 300px;
-    flex: 1;
 }
 
 img {

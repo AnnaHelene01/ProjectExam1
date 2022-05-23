@@ -14,7 +14,7 @@ p {
 
 .homepage-h1 { 
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -97,38 +97,54 @@ header a:hover {
 }
 
 /*Loading ikon: */
-.slider{
+
+/* SLIDER */
+.slider {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
     text-align: center;
+    min-height: 300px;
+    overflow: hidden;
+    position: relative;
 }
 
-/*BILDE PÅ FORSIDEN -> */
-.front-image {
-    background-image: url('/images/homepage.webp');
-    background-size: cover;
-    filter: brightness(50%);
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
-    min-height: 30vh;
+.slider > div {
+    font-size: 1.5em;
+    margin: 30px;
+    padding: 20px;
 }
 
-.front-text {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 15px;
-    color: #FFF;
-    background-color: rgba(0, 0, 0, 0.8);
+.img-posts-size {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
 }
 
-.frontpage-img {
-    width: 60%;
+.slider-btn {
+    text-align: center;
+    margin-bottom: 100px;
 }
 
-.front-header {
-    font-size: 1em;
+.slider-right {
+    height: 50px;
+    width: 90px;
+    border: 2px solid black;
+    background-color: #a9d6e5;
+    margin-right: 10px;
+    font-size: 1.2rem;
 }
+
+.slider-left {
+    height: 50px;
+    width: 90px;
+    border: 2px solid black;
+    background-color: #a9d6e5;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+
 
 /*Seksjon med dato og linje under */
 #date {
@@ -164,26 +180,7 @@ header a:hover {
     margin-right: 20px;
 }
 
-/* SLIDER */
-.slider {
-    height: 400px;
-    overflow: hidden;
-    position: relative;
-}
 
-.slider .slider-post {
-    height: 100%;
-    width: 100%;
-    display: none;
-    position: absolute;
-    transition: transform 400ms;
-}
-
-.slider .slider-post.active,
-.slider .slider-post.prev-item,
-.slider .slider-post.next-item {
-    display: block;
-}
 
 /*EKSTRA INFO UNDER SLIDER (mine anbefalinger)*/
 .extra-info {
@@ -213,6 +210,10 @@ img {
 
 .reco-div {
     max-width: 380px;
+}
+
+.reco-h2 {
+    margin-bottom: 15px;
 }
 
 
@@ -314,6 +315,16 @@ footer {
 
 
 
+@media (min-width: 555px) {
+    /* Responsiv slider*/
+    .img-posts-size {
+        width: 400px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+
 /*RESPONSIV FOOTER */
 @media (min-width: 580px) {
     .footer-links , .footer-icons {
@@ -336,6 +347,21 @@ footer {
 }
 
 
+@media (min-width: 700px) {
+    .homepage-h1 { 
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 750px) {
+    /*Responsiv slider */
+    .img-posts-size {
+        width: 500px;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
 
 @media (min-width: 905px) {
     /* Recomanndation section grid responsive: */
@@ -347,8 +373,29 @@ footer {
     img , .reco-div {
         max-width: 380px;
     }
+
+        /*Responsiv slider */
+        .img-posts-size {
+            width: 500px;
+            height: 400px;
+            object-fit: cover;
+        }
 }
 
+
+@media (min-width: 1140px) {
+    /* Responsiv slider*/
+    .slider {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .img-posts-size {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+}
 
 @media (max-width: 1145px) {
     /* Recomanndation section grid, justify center only on mobile*/
@@ -390,25 +437,6 @@ footer {
  
     header label {
         display: none;
-    }
-
-/*Gjøre bildet med tekst responsivt: */
-    .front-image {
-        background-image: url('/images/homepage.webp');
-        background-size: cover;
-        filter: brightness(50%);
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: bottom;
-        min-height: 70vh;
-    }
-    
-    .front-text {
-        top: 38%;
-    }
-
-    .front-header {
-        font-size: 1.5em;
     }
  }
  
