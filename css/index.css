@@ -185,21 +185,36 @@ header a:hover {
     display: block;
 }
 
-/*EKSTRA INFO UNDER SLIDER */
+/*EKSTRA INFO UNDER SLIDER (mine anbefalinger)*/
 .extra-info {
     display: grid;
     grid-template-columns: auto auto;
 }
 
-.section-recommandations {
-   
+.reco-grid {
+   display: grid;
+   grid-template-columns: auto auto;
 }
+
+img {
+    max-width: 380px;
+}
+
+.reco-header {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.reco-div {
+    max-width: 380px;
+}
+
 
 /* Seksjon til venstre */
 .side-box {
     width: 300px;
     background-color: #a9d6e5;
-    height: 400px;
+    height: 800px;
 }
 
 .side-first-section {
