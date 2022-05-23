@@ -189,6 +189,7 @@ header a:hover {
 .extra-info {
     display: grid;
     grid-template-columns: auto auto;
+    margin-bottom: 50px;
 }
 
 .reco-grid {
@@ -259,13 +260,15 @@ footer > a:hover   {color:#000;}  /* mouse over link */
 footer > a:active  {color:#000;}  /* selected link   */ 
 
 footer {
-    margin-top: 2em;
+    margin-top: 100px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .footer-icons {
     flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .footer-links > p {
