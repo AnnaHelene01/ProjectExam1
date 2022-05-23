@@ -193,7 +193,7 @@ header a:hover {
 
 .reco-grid {
    display: grid;
-   grid-template-columns: auto auto;
+   grid-template-columns: auto;
 }
 
 img {
@@ -203,6 +203,11 @@ img {
 .reco-header {
     font-weight: bold;
     font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.reco-div > p {
+    margin-top: 10px;
 }
 
 .reco-div {
@@ -212,9 +217,7 @@ img {
 
 /* Seksjon til venstre */
 .side-box {
-    width: 300px;
-    background-color: #a9d6e5;
-    height: 800px;
+    display: none;
 }
 
 .side-first-section {
@@ -315,6 +318,50 @@ footer {
     }
 }
 
+/*Recommandation section grid responsive: */
+/*Change size on img and txt */
+@media (min-width: 620px) {
+    img , .reco-div {
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 620px) {
+    img , .reco-div {
+        max-width: 550px;
+    }
+}
+
+
+
+@media (min-width: 905px) {
+    /* Recomanndation section grid responsive: */
+    .reco-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    img , .reco-div {
+        max-width: 380px;
+    }
+}
+
+
+@media (max-width: 1145px) {
+    /* Recomanndation section grid, justify center only on mobile*/
+    .reco-grid {
+        justify-content: center;
+    }
+
+    .reco-div {
+        margin: 40px;
+    }
+
+    .reco-h2 {
+        text-align: center;
+    }
+}
+
 
 /*DESKTOP VERSION*/
 @media (min-width: 1041px) {
@@ -362,3 +409,13 @@ footer {
     }
  }
  
+ @media (min-width: 1146px) {
+     /*Main seksjon responsivt */
+    /*Sidebox */
+    .side-box {
+        display: block;
+        width: 300px;
+        background-color: #a9d6e5;
+        height: 800px;
+    }
+ }
