@@ -16,6 +16,7 @@ p {
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 2em;
     text-align: center;
+    margin: 10px;
 }
 
 /* Meny > */
@@ -98,7 +99,20 @@ header a:hover {
     background-color: white;
 }
 
-/*Loading ikon: */
+
+/*Seksjon med dato og linje under */
+#date {
+    margin-left: 20px;
+    margin: 15px;
+}
+
+.line {
+    background-color: rgb(240, 240, 234);
+    border: none;
+    height: 1px;
+    margin: 0;
+    flex-shrink: 0;
+}
 
 /* SLIDER */
 .slider {
@@ -153,21 +167,6 @@ header a:hover {
     font-size: 1.2rem;
 }
 
-
-
-/*Seksjon med dato og linje under */
-#date {
-    margin-left: 20px;
-    margin: 15px;
-}
-
-.line {
-    background-color: rgb(240, 240, 234);
-    border: none;
-    height: 1px;
-    margin: 0;
-    flex-shrink: 0;
-}
 
 
 /*MAIN HOME PAGE */
@@ -396,7 +395,7 @@ footer {
     /* Responsiv slider*/
     .slider {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
     }
 
     .img-posts-size {

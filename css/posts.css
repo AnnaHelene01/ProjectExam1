@@ -55,6 +55,8 @@ a {
     object-fit: cover;
 }
 
+.img-posts-size:hover {opacity: 0.7;}
+
 /*Designe buttons */
 .buttons {
     text-align: center;

@@ -64,7 +64,10 @@ function listPosts (posts) {
         </div>`;
     }
     output.innerHTML += myList;
+    
    } 
+
+
 }
 
 // Lage en funksjon for å fjerne knappen etter første klikk da det ikke er mer enn page 2!

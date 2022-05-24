@@ -37,6 +37,8 @@ img {
 img:hover {opacity: 0.7;}
 
 
+
+
 @media (min-width: 1041px) {
     img {
         max-width: 500px;
