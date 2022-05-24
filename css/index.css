@@ -107,15 +107,20 @@ header a:hover {
     justify-content: center;
     text-align: center;
     min-height: 300px;
-    overflow: hidden;
+    max-height: 1270px;
+    overflow: auto;
+    white-space: nowrap;
     position: relative;
 }
 
 .slider > div {
+    display: inline-block;
     font-size: 1.5em;
     margin: 30px;
     padding: 20px;
 }
+
+.slider > div:hover {opacity: 0.7;}
 
 .img-posts-size {
     width: 300px;

@@ -25,7 +25,7 @@ document.getElementById('date').innerHTML = out_string; //sette html of the hmtl
 
 
 // SLIDER ->
-const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed&per_page=3"; //henter ut spesifikt 9 poster etter eget valg
+const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed&per_page=12"; //henter ut spesifikt 9 poster etter eget valg
 //const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed&per_page=9&page=2";
 
 fetch(url)
