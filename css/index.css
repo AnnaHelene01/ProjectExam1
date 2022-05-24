@@ -76,6 +76,8 @@ nav li {
 
 .logo {
     width: 200px;
+    list-style: none;
+    margin-left: 20px;
 }
 
 /* Sette underline på aktiv side*/
