@@ -218,6 +218,7 @@ img {
 
 .reco-div {
     max-width: 300px;
+    margin-top: 10px;
 }
 
 .reco-h2 {
@@ -455,6 +456,6 @@ footer {
         display: block;
         width: 300px;
         background-color: #a9d6e5;
-        height: 800px;
+        height: 850px;
     }
  }

@@ -46,6 +46,7 @@ fetch(url)
   console.error('Error:', error);
 });
 
+const knapp = document.getElementById("loadMore");
 const output = document.querySelector(".list");
 function listPosts (posts) {
     let myList = "";
@@ -64,16 +65,16 @@ function listPosts (posts) {
         </div>`;
     }
     output.innerHTML += myList;
-    
+    // Setter display: none , etter knappen er klikket på da det ikke er mer enn page 2!
+    //console.log ("KNAPP: ", knapp); 
+    knapp.style.display="none";
    } 
 
-
+// En annen måte å fjerne knappen på:
+  //  let knapp = document.getElementById("loadMore")
+  //  knapp.style.display="none";
 }
 
-// Lage en funksjon for å fjerne knappen etter første klikk da det ikke er mer enn page 2!
-function removeBtn() {
-  document.getElementById("loadMore").style.display="none";
-}
 
 
 
