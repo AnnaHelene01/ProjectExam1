@@ -23,7 +23,7 @@ form.addEventListener("submit", validateForm);
 const fullName = document.querySelector ("input#name");
 const subject = document.querySelector ("input#subject");
 const email = document.querySelector ("input#email");
-const message = document.querySelector ("input#message");
+const message = document.querySelector ("textarea#message");
 
 //Hente ut alle span-ene fra html!
 const nameMsg = document.querySelector ("span#nameMsg");
