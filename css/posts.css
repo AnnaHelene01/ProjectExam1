@@ -83,11 +83,10 @@ button {
 }
 
 @media (min-width: 750px) {
-    .img-posts-size {
+    /* .img-posts-size {
         width: 500px;
-        height: 400px;
         object-fit: cover;
-    }
+    } */
 }
 
 

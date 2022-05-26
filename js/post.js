@@ -32,10 +32,21 @@ function displayPost (data) {
 
   output.innerHTML = content;
   document.title = title;
+
+
+}
+
+const imgg = document.querySelector(".lasse");
+const getimg = document.querySelector(".img-modal");
+
+function modal() {
+  imgg.style.display="block";  
+  getimg.src = this.src;
+console.log(getimg);
 }
 
 // Endre tittel til hver enkelt tema:
-document.title('${title}');
+// document.title('${title}');
 
 //Hente ut bildene fra postene: 
 function getImageURL(id) {
@@ -57,6 +68,11 @@ function addImage(src) {
     img.alt = "";
     img.maxwidth = 50;
     output.prepend(img);
+
+    const imgModal = document.querySelectorAll("#post img");
+imgModal.forEach(img =>{
+  img.addEventListener('click', modal);
+})
   }
 }
 
