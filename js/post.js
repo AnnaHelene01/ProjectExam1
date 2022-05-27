@@ -36,7 +36,7 @@ function displayPost (data) {
 
 }
 
-const imgg = document.querySelector(".lasse");
+const imgg = document.querySelector(".light-box");
 const getimg = document.querySelector(".img-modal");
 
 function modal() {
@@ -46,7 +46,7 @@ console.log(getimg);
 }
 
 //Fjerne modal når den blir klikket på igjen!
-const removeModal = document.querySelector(".lasse");
+const removeModal = document.querySelector(".light-box");
 removeModal.addEventListener('click', remove);
 
 function remove() {

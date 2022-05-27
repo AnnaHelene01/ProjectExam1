@@ -156,6 +156,7 @@ header a:hover {
     font-weight: bold;
     margin-right: 10px;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .slider-left {
@@ -166,6 +167,7 @@ header a:hover {
     font-weight: bold;
     margin-left: 10px;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 
@@ -265,10 +267,14 @@ img {
 
 /*FOOTER -> */
 /*Gjøre linkene svarte */
-footer > a:link    {color:#000;}  /* unvisited link  */
-footer > a:visited {color:#000;}  /* visited link    */
-footer > a:hover   {color:#000;}  /* mouse over link */
-footer > a:active  {color:#000;}  /* selected link   */ 
+a {
+    color: black;
+}
+
+a:hover{
+    color: #2a6f97;
+ }
+
 
 footer {
     margin-top: 100px;
@@ -289,7 +295,6 @@ footer {
 
 .footer-links {
     justify-content: space-evenly;
-    padding-right: 60px;
 }
 
 .footer-txt {
@@ -325,6 +330,14 @@ footer {
 
 
 
+/*RESPONSIV FOOTER */
+@media (min-width: 350px) {
+    .footer-icons {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
 @media (min-width: 555px) {
     /* Responsiv slider*/
     .img-posts-size {
@@ -337,8 +350,13 @@ footer {
 
 /*RESPONSIV FOOTER */
 @media (min-width: 580px) {
-    .footer-links , .footer-icons {
+    .footer-links {
         display: flex;
+    }
+
+    .footer-icons {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
     }
 }
 
@@ -363,14 +381,6 @@ footer {
     }
 }
 
-@media (min-width: 750px) {
-    /*Responsiv slider */
-    .img-posts-size {
-        width: 500px;
-        height: 400px;
-        object-fit: cover;
-    }
-}
 
 
 @media (min-width: 905px) {
@@ -384,13 +394,8 @@ footer {
         max-width: 380px;
     }
 
-        /*Responsiv slider */
-        .img-posts-size {
-            width: 500px;
-            height: 400px;
-            object-fit: cover;
-        }
 }
+
 
 
 @media (min-width: 1140px) {
@@ -406,22 +411,6 @@ footer {
         object-fit: cover;
     }
 }
-
-@media (max-width: 1145px) {
-    /* Recomanndation section grid, justify center only on mobile*/
-    .reco-grid {
-        justify-content: center;
-    }
-
-    .reco-div {
-        margin: 40px;
-    }
-
-    .reco-h2 {
-        text-align: center;
-    }
-}
-
 
 /*DESKTOP VERSION*/
 @media (min-width: 1041px) {
@@ -449,6 +438,24 @@ footer {
         display: none;
     }
  }
+
+ @media (max-width: 1145px) {
+    /* Recomanndation section grid, justify center only on mobile*/
+    .reco-grid {
+        justify-content: center;
+    }
+
+    .reco-div {
+        margin: 40px;
+    }
+
+    .reco-h2 {
+        text-align: center;
+    }
+
+
+}
+
  
  @media (min-width: 1146px) {
      /*Main seksjon responsivt */
