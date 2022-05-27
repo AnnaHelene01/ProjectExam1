@@ -45,6 +45,14 @@ function modal() {
 console.log(getimg);
 }
 
+//Fjerne modal når den blir klikket på igjen!
+const removeModal = document.querySelector(".lasse");
+removeModal.addEventListener('click', remove);
+
+function remove() {
+  removeModal.style.display="none";
+}
+
 // Endre tittel til hver enkelt tema:
 // document.title('${title}');
 
@@ -70,8 +78,8 @@ function addImage(src) {
     output.prepend(img);
 
     const imgModal = document.querySelectorAll("#post img");
-imgModal.forEach(img =>{
-  img.addEventListener('click', modal);
+    imgModal.forEach(img =>{
+    img.addEventListener('click', modal);
 })
   }
 }
