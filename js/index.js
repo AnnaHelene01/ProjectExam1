@@ -44,7 +44,7 @@ function listPosts (posts) {
     for (let post of posts) {
         console.log(post);
         myList += `
-        <div>
+        <div class="slider-post">
            <div class="posts-img"> 
               <a href="post.html?id=${post.id}"> 
               <img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="img-posts-size">
@@ -57,3 +57,33 @@ function listPosts (posts) {
     }
     output.innerHTML = myList;
 } 
+
+// slider funksjon
+const next = document.getElementById("slider-right");
+const back = document.getElementById("slider-left");
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slider-post");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}

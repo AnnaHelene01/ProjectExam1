@@ -21,12 +21,12 @@ h1 {
 }
 
 .post-cont > p {
-    max-width: 300px;
+    max-width: 400px;
     margin: 20px;
 }
 
 img {
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
     margin: 30px;
 }

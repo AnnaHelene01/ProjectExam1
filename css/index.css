@@ -32,7 +32,6 @@ header {
 }
 
 nav {
-    margin-left: 25px;
     display: none;
     position: fixed;
     top: 90px;
@@ -122,10 +121,9 @@ header a:hover {
     text-align: center;
     min-height: 300px;
     max-height: 1270px;
-    overflow: hidden;
+    overflow: auto;
     white-space: nowrap;
     position: relative;
-    margin-left: 30px;
 }
 
 .slider > div {
@@ -136,6 +134,10 @@ header a:hover {
 }
 
 .slider > div:hover {opacity: 0.7;}
+
+.slider-post {
+    display: none;
+}
 
 .img-posts-size {
     width: 300px;
@@ -148,7 +150,7 @@ header a:hover {
     margin-bottom: 100px;
 }
 
-.slider-right {
+#slider-right {
     height: 50px;
     width: 90px;
     border: 2px solid black;
@@ -159,7 +161,7 @@ header a:hover {
     cursor: pointer;
 }
 
-.slider-left {
+#slider-left {
     height: 50px;
     width: 90px;
     border: 2px solid black;
@@ -194,15 +196,10 @@ header a:hover {
 
 
 /*EKSTRA INFO UNDER SLIDER (mine anbefalinger)*/
-.extra-info {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-bottom: 50px;
-}
-
 .reco-grid {
    display: grid;
    grid-template-columns: auto;
+   justify-content: center;
 }
 
 img {
@@ -221,48 +218,15 @@ img {
 
 .reco-div {
     max-width: 300px;
-    margin-top: 10px;
+    margin: 20px;
 }
 
 .reco-h2 {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 
-/* Seksjon til venstre */
-.side-box {
-    display: none;
-}
-
-.side-first-section {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-
-.side-img {
-    background-image: url('/images/annaportrett2.png');
-    background-size: cover;
-    min-width: 90px;
-    min-height: 90px;
-    margin-left: 30px;
-}
-
-.side-txt-lol {
-    max-width: 140px;
-    margin-left: 20px;
-}
-
-.side-header {
-    font-weight: bolder;
-    font-size: 1.3rem;
-    margin-left: 30px;
-    margin-top: 25px;
-}
-
-.side-txt {
-    font-size: 1rem;
-    margin-left: 30px;
-}
 
 
 /*FOOTER -> */
@@ -457,13 +421,3 @@ footer {
 }
 
  
- @media (min-width: 1146px) {
-     /*Main seksjon responsivt */
-    /*Sidebox */
-    .side-box {
-        display: block;
-        width: 300px;
-        background-color: #a9d6e5;
-        height: 850px;
-    }
- }
