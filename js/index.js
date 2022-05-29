@@ -77,7 +77,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slider-post");
-  let dots = document.getElementsByClassName("slider-right");
+  let dots = document.getElementsByClassName(".slider-right");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {

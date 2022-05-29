@@ -5,12 +5,13 @@ h1 {
 }
 
 
-/*Gjøre linkene svarte 
-a:link    {color:#000;}   unvisited link  
-a:visited {color:#000;}   visited link    
-a:hover   {color:#000;} * mouse over link 
-a:active  {color:#000;}  /* selected link    
-*/
+header, h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
 
 a {
     font-family: 'Open Sans', sans-serif;
