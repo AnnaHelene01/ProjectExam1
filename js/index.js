@@ -26,7 +26,7 @@ document.getElementById('date').innerHTML = out_string; //sette html of the hmtl
 
 // SLIDER ->
 const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed&per_page=12"; //henter ut spesifikt 9 poster etter eget valg
-//const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed&per_page=9&page=2";
+
 
 fetch(url)
 .then(response => response.json())
@@ -43,11 +43,12 @@ function listPosts (posts) {
     let myList = "";
     for (let post of posts) {
         console.log(post);
+        let altTxt = post._embedded["wp:featuredmedia"][0].alt_text;
         myList += `
-        <div class="slider-post">
+        <div class="slider-post"> 
            <div class="posts-img"> 
               <a href="post.html?id=${post.id}"> 
-              <img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="img-posts-size">
+              <img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="img-posts-size" alt="${altTxt}">
               </a>
            </div>
            <a href="post.html?id=${post.id}">
@@ -55,7 +56,8 @@ function listPosts (posts) {
            </a>
         </div>`;
     }
-    output.innerHTML = myList;
+    output.innerHTML = myList; //onclick="currentSlide(${index+1})"
+    
 } 
 
 // slider funksjon
@@ -75,7 +77,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("slider-post");
-  let dots = document.getElementsByClassName("dot");
+  let dots = document.getElementsByClassName("slider-right");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {

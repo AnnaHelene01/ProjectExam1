@@ -16,11 +16,12 @@ function listPosts (posts) {
     let myList = "";
     for (let post of posts) {
         console.log(post);
+        let altTxt = post._embedded["wp:featuredmedia"][0].alt_text;
         myList += `
         <div>
            <div class="posts-img"> 
               <a href="post.html?id=${post.id}"> 
-              <img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="img-posts-size">
+              <img src="${post._embedded['wp:featuredmedia'][0].source_url}" class="img-posts-size" alt="${altTxt}">
               </a>
            </div>
            <a href="post.html?id=${post.id}">

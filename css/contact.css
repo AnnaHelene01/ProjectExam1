@@ -5,7 +5,7 @@ h1 {
 }
 
 .anothertxt {
-    margin-left: 50px;
+    text-align: center;
 }
 
   /*FØRSTE SEKSJON AV KONTAKT SIDE */
@@ -173,6 +173,11 @@ textarea {
       h2, p  {
           text-align: left;
       }
+
+      .anothertxt {
+        text-align: left;
+        margin-left: 50px;
+    }
       
     .contact-box {
         display: flex;
