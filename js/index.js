@@ -25,10 +25,10 @@ document.getElementById('date').innerHTML = out_string; //sette html of the hmtl
 
 
 // SLIDER ->
-const url = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed&per_page=12"; //henter ut spesifikt 9 poster etter eget valg
+const slidepost = "https://www.annahelene.no/exam1/wp-json/wp/v2/posts?_embed&per_page=12"; //henter ut spesifikt 9 poster etter eget valg
 
 
-fetch(url)
+fetch(slidepost)
 .then(response => response.json())
 .then(data => {
   //console.log('Success:', data);
@@ -61,8 +61,6 @@ function listPosts (posts) {
 } 
 
 // slider funksjon
-const next = document.getElementById("slider-right");
-const back = document.getElementById("slider-left");
 let slideIndex = 1;
 showSlides(slideIndex);
 

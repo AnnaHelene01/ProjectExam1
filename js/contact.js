@@ -32,15 +32,6 @@ const emailMsg = document.querySelector ("span#emailMsg");
 const messageMsg = document.querySelector ("span#messageMsg");
 
 
-//Hvis alle felter er validert rett, kan formet bli submitted
-const displayBanner = (message = "No message", className) => { //lager en funksjon med beskjed og klasse
-    let bann = document.createElement("div"); //lager en ny div
-    if (className) bann.classList.add(className);
-    bann.innerHTML = message;
-    let firstNode = document.body.childNodes[0];
-    document.body.insertBefore(bann, firstNode); //plassere først over alt på siden
-  }
-
 
 function validateForm(e) {
   // Forhindre at skjema submitter før det er ferdig
