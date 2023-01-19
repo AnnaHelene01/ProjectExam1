@@ -1,8 +1,10 @@
-# ProjectExam1
-Prosjekt eksamen 1 - Frontend 2022 year1
-Dette er min oppgave, som består av en treningsblogg med 5 sider.
-På forsiden har jeg slider med innleggene mine fra Wordpress.
-På innlegg siden har jeg en load more knapp med funksjon som laster inn flere innlegg.
-Har også lagt inn et bilde modal på innlegg sidene så du kan få se bildene i større format
-ved å klikke på de. 
-Så har jeg validert kontakt skjema på kontakt siden.
+# Project Exam 1 - Frontend year 2022 
+
+## Task
+Exam task was to create a webpage with a blog theme, i chose a workout blog, using Wordpress as a Headless CMS. The website had some requirepents like at least 12 blog posts with a load-more function, image modal, and a carousel slider. 
+JavaScript was quite new to me here so i struggled a lot with the functions. Loadmore and image modal works fine but my slider didnt turn out as planned. I will go in an fix this when I get the time, since I have learned a lot more now.
+
+## Links
+- Netlify: ("https://projectexam-1.netlify.app/")
+- 
+
